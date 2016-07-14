@@ -36,7 +36,6 @@ namespace Dependency_injection
             var kernel = new StandardKernel();
             new NinjectDI(kernel).Load();
             kernel.Load(Assembly.GetExecutingAssembly());
-          
 
             var NinjectmailSender = kernel.Get<IMailSender>();
 
